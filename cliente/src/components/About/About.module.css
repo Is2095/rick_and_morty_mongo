@@ -1,0 +1,44 @@
+
+
+.container {
+    display: flex;
+   flex-direction: column; 
+   width: 100vw;
+   height: 100vh; 
+}
+.bienvenido{
+    font-size: 60px;
+    align-self: center;
+    color:chartreuse;
+}
+.descripcion{
+    font-size: 30px;
+    height: 200px;
+    width: 400px;   
+}
+.tittle {
+    display: grid;
+    grid-template-columns: 40% 40% 30%;
+    margin-left: 20px;
+    margin-right: 20px;    
+    font-size: 30px;
+    text-decoration:underline;
+    text-decoration: underline;
+}
+.text {
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 40% 40% 30%;
+
+}
+.creador {
+    font-size: 60px;
+    font-style: italic;
+    text-shadow: 5px 5px 3px black;
+    color: red;
+}
+.derechos {
+    align-self: flex-end;
+    padding-right: 50px;
+}

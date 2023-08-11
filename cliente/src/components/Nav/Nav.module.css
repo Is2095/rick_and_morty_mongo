@@ -1,0 +1,31 @@
+
+.navBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 80%;
+    height: 60px;
+    border: 1.5px solid black;
+    border-radius: 5px; 
+    background-color: green;
+    box-shadow: 5px 5px 20px 5px black;
+    margin: 5px;
+    position: sticky;
+    top: 5px;   
+}
+.active{
+    -webkit-text-stroke: 1px black;
+    font-size: 25px;
+    text-decoration: none;
+    border-bottom-width: 80px;
+    color:  rgb(24, 117, 143);
+    /* text-underline-offset: 8px; */
+    text-decoration-color: rgb(38, 38, 38);
+    /* text-decoration-thickness: 2px;     */
+  }
+  
+  .disable {
+    text-decoration: none;
+    color: inherit;
+  }
+  

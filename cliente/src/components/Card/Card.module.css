@@ -1,0 +1,77 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    margin: 10px;
+    width: 250px;
+    height: 310px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px 5px rgb(1, 250, 96);
+    
+}
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.botonCorazon {
+    margin: 5px 5px 0px 0px;
+    border-radius: 50px;
+    height: 23px;
+    border: none;
+    cursor: pointer;
+}
+.boton {
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 0, 0, 0.8);
+    margin: 5px 5px 0px 0px;
+    font-weight: 800;
+    transition: .5s;
+}
+.boton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: red;
+}
+img {
+    width: 240px;
+    border-radius: 10px;
+
+}
+.imagen {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 5px ;
+}
+.nombre {
+    position: absolute;
+    background-color: rgb(171, 246, 221, 0.5);
+    margin: 0px;
+    border-radius: 5px;
+    padding: 0px 3px 0px 3px;
+    font-weight: 700;
+    font-size: 80%; 
+}
+.nombre:hover {
+    transition: .4s;
+    transform: scale(1.5);
+    background-color:  rgb(1, 250, 96);
+}
+.datos {
+    display: flex;
+    justify-content: space-around;
+    font-size: 50%;
+}
+.datosh2{
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+}
+.datosh2:hover {
+    transition: .5s;
+    transform: scale(1.5);
+}

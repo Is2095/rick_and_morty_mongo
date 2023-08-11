@@ -1,0 +1,39 @@
+
+.entrada {
+    outline: none;
+    margin-right: 10px;
+}
+.entrada:hover {
+    transition: .2s;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 5px rgb(1, 250, 96);
+    border: 1px solid rgb(1, 250, 96);
+}
+.searchButton {
+    margin: 0px 5px 0px 5px; 
+    padding: 8px;
+    background-color: green;
+    color:blanchedalmond;
+    border-radius: 5px;
+    border: 1px solid green;   
+}
+.searchButton:hover {
+    transition: .2s;
+    box-shadow: 3px 3px 20px 5px rgb(1, 250, 96);
+    border: 1px solid rgb(1, 250, 96);
+}
+
+.buttonLogout {
+    margin: 0px 5px 0px 5px; 
+    padding: 8px;
+    background-color: green;
+    color:blanchedalmond;
+    border-radius: 5px;
+    border: 1px solid green;   
+}
+.buttonLogout:hover {
+    transition: .2s;
+    box-shadow: 3px 3px 20px 5px red;
+    border: 1px solid red;
+    color: rgb(241, 144, 144);
+}
