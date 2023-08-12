@@ -7,10 +7,10 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "node ./index.js",
+    "start": "node ./src/index.js",
     "test": "jest --detectOpenHandles",
     "test0": "jest --watchAll --no-cache --detectOpenHandles",
-    "dev": "nodemon ./index.js"
+    "dev": "nodemon ./src/index.js"
   },
   "author": "Ismael",
   "license": "ISC",
