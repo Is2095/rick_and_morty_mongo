@@ -10,7 +10,7 @@
     "routes": [
         {
             "src": "/rickandmorty/(.*)",
-            "dest": "/rickandmorty/\\$1"
+            "dest": "/rickandmorty"
         }
     ]
 }
