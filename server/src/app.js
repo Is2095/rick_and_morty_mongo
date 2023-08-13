@@ -7,6 +7,7 @@ const cors = require("cors");
 //const PORT = 3001;
 server.use(cors())
 server.use(express.json())
+server.use(express.urlencoded({ extended: true }))
 
 server.use((req, res, next) => {
    res.header('Access-Control-Allow-Origin', '*');
@@ -18,8 +19,9 @@ server.use((req, res, next) => {
       res.header(
          'Access-Control-Allow-Methods',
          'GET, POST, OPTIONS, PUT, DELETE'
-         );
-         next();
+      );
+      res.header("X-Total-Count", "1000")
+      next();
       });    
       
 server.use("/rickandmorty", router)
