@@ -61,7 +61,7 @@ const onSubmit = async (e) => {
     const response = await  axios('/rickandmorty/login/' + `?email=${username}&password=${password}`);
     const {access} = response.data;
 
-    dispatch(acceso(true));
+    dispatch(acceso(access));
     navigate('/home');
     
     } catch (error) {
