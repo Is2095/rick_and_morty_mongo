@@ -8,10 +8,10 @@ import { BrowserRouter } from 'react-router-dom'
 import store from './Redux/store.js'
 import { Provider } from 'react-redux'
 
+
 import axios from 'axios'
-axios.defaults.baseURL = 'http://localhost:3001' // para trabajar en forma local
-//axios.defaults.baseURL = 'https://proyectorickandmorty-production.up.railway.app' // para usar deplayado
-//                        https://proyectorickandmorty-production.up.railway.app/
+//axios.defaults.baseURL = process.env.REACT_APP_LOCAL // para trabajar en forma local
+axios.defaults.baseURL = process.env.REACT_APP_URL_BACKEND // para usar deplayado
 
 
 
