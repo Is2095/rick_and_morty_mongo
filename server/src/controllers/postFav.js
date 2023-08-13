@@ -4,7 +4,7 @@ const Favorite = require('../models/Favorite')
 const postFav = async (req, res) => {
     const {name, image, species, gender, id} = req.body;
     try {
-        if(!name || !image || !species || !gender || !id) res.status(401).json({error: 'Faltan datos'}) 
+        if(!name || !image || !species || !gender || !id) return res.status(401).json({error: 'Faltan datos'}) 
         const favoriteNew = new Favorite({
             id: id,
             name: name, 
@@ -17,10 +17,11 @@ const postFav = async (req, res) => {
 
         const favAll = await Favorite.find()
 
-        res.status(200).json(favAll)
+        return res.status(200).json(favAll)
 
     } catch (error) {
-        res.status(500).json(error.message);
+        console.log(error)
+        return res.status(500).json(error.message);
     }
         
     
