@@ -94,8 +94,6 @@ const SearchBar = () => {
 
    return (
       <div>
-<h1>slkasjdhflkasdjhflkasdjhflkasdjhflkasdjhflkasdjhlfkjadhslkfjhasdlkfjhlaksdjhflkasdhjflkasdjhflkashjlfkahjslkfhjasdlkfhjasldkfhjlaskdhjflaskdhjfl</h1>
-<h1>{process.env.REACT_APP_LOCAL}</h1>
          <Modal2 cierreModal={cierreModal} /> 
          {/* {(cartelModal.permiso) ? <Modal permiso={cartelModal.permiso} texto={cartelModal.texto} cierreModal={cierreModal} /> : null} */}
          <div>
