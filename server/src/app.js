@@ -4,14 +4,10 @@ const server = express();
 const router = require('./routes/index')
 const cors = require("cors");
 
-//const PORT = 3001;
-// server.use(cors({
-//    origin: "*",
-//    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-//    allowedHeaders: ['Content-Type', 'Authorization'],
-// }))
+
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
+server.use(cors())
 
 server.use((req, res, next) => {
    res.header('Access-Control-Allow-Origin', 'https://rick-and-morty-mongo-front.vercel.app');
