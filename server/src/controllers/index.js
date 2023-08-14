@@ -6,5 +6,6 @@ const login = require('./login')
 const postFav = require('./postFav')
 const deleteFav = require('./deleteFav')
 const postUser = require('./postUser')
+const getfav = require("./getfav")
 
-module.exports = { getCharById, login, postUser, postFav, deleteFav}
+module.exports = { getCharById, login, postUser, postFav, deleteFav, getfav}
