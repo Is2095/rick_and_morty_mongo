@@ -5,7 +5,7 @@ const Favorite = require("../models/Favorite");
 // ********************** CON ASYNC-AWAIT *********************
 
 const getCharById = async (req, res) => {
-    const ids = req.params.id;
+   // const ids = req.params.id;
     // try {
     //     const response = await axios.get(URL + ids)
     //     const {id, name, gender, species, origin, image, status} = response.data;
