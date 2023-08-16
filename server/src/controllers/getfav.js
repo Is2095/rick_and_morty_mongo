@@ -3,9 +3,9 @@ const Favorite = require("../models/Favorite");
 
 const getfav = async (req, res) => {
     try {
-        const favAll = await Favorite.find()
-        console.log(favAll);
-        return res.status(200).json(favAll)
+        // const favAll = await Favorite.find()
+        // console.log(favAll);
+        return res.status(200).json('hola mundo')
     } catch (error) {
         console.log(error);
         res.status(500).json(error);
