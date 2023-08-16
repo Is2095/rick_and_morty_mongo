@@ -1,19 +1,27 @@
 const axios = require('axios')
 const URL = 'https://rickandmortyapi.com/api/character/';
+const Favorite = require("../models/Favorite");
 
 // ********************** CON ASYNC-AWAIT *********************
 
 const getCharById = async (req, res) => {
     const ids = req.params.id;
-    try {
-        const response = await axios.get(URL + ids)
-        const {id, name, gender, species, origin, image, status} = response.data;
-        res.status(200).json({id, name, gender, species, origin, image, status});
+    // try {
+    //     const response = await axios.get(URL + ids)
+    //     const {id, name, gender, species, origin, image, status} = response.data;
+    //     res.status(200).json({id, name, gender, species, origin, image, status});
 
+    // } catch (error) {
+    //    res.status(505).json({error: error.response.data.error})
+    //  }
+ try {
+        const favAll = await Favorite.find()
+        console.log(favAll);
+        return res.status(200).json(favAll)
     } catch (error) {
-       res.status(505).json({error: error.response.data.error})
-     }
-
+        console.log(error);
+        res.status(500).json(error);
+    }
 }
 
 module.exports = getCharById;
