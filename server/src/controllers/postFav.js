@@ -1,9 +1,11 @@
 
 const Favorite = require('../models/Favorite')
+const connectMongo  = require('../DB_connection');
 
 const postFav = async (req, res) => {
     const {name, image, species, gender, id} = req.body;
     try {
+        connectMongo()
         if(!name || !image || !species || !gender || !id) return res.status(401).json({error: 'Faltan datos'}) 
         const favoriteNew = new Favorite({
             id: id,

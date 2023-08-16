@@ -10,8 +10,8 @@ import { Provider } from 'react-redux'
 
 
 import axios from 'axios'
-//axios.defaults.baseURL = process.env.REACT_APP_LOCAL // para trabajar en forma local
-axios.defaults.baseURL = process.env.REACT_APP_URL_BACKEND // para usar deplayado
+axios.defaults.baseURL = process.env.REACT_APP_LOCAL // para trabajar en forma local
+//axios.defaults.baseURL = process.env.REACT_APP_URL_BACKEND // para usar deplayado
 
 
 
