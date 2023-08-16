@@ -3,8 +3,9 @@ const express = require('express');
 const server = express();
 const router = require('./routes/index')
 const cors = require("cors");
+const connectMongo  = require('./../src/DB_connection');
 
-
+connectMongo()
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
 server.use(cors())
